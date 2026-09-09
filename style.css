@@ -891,3 +891,13 @@ a.metric-card:hover {
 @media(max-width:640px) {
   .profile-socials { display:none !important; }
 }
+
+/* Thu gọn khoảng trống trên mobile */
+@media(max-width:640px) {
+  .hero-stats { margin-top:16px; padding-top:16px; gap:16px; }
+  .hero-visual { margin-top:12px !important; }
+  .profile-card { width:280px; height:360px; }
+  .profile-card h3 { margin-top:8px; font-size:1.1rem; }
+  .profile-card p { margin-top:2px; }
+  .hero-subtitle { margin-bottom:16px; }
+}
