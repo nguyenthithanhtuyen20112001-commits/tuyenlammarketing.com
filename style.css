@@ -930,3 +930,8 @@ a.metric-card:hover {
 @media(max-width:640px) {
   .hero-visual { margin-top:0 !important; }
 }
+
+/* Hero subtitle - giảm font-size 2 đơn vị trên mobile */
+@media(max-width:640px) {
+  .hero-subtitle { font-size:0.78rem !important; }
+}
