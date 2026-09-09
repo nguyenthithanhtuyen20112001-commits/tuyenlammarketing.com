@@ -851,3 +851,22 @@ a.metric-card:hover {
     text-align:center;
   }
 }
+
+/* Hero buttons - cân bằng và ở giữa trên mobile */
+@media(max-width:640px) {
+  .hero-buttons {
+    display:flex !important;
+    flex-wrap:nowrap !important;
+    justify-content:center !important;
+    gap:12px !important;
+    width:100%;
+  }
+  .hero-buttons a {
+    flex:1 1 0 !important;
+    text-align:center !important;
+    font-size:0.78rem !important;
+    padding:12px 0 !important;
+    white-space:nowrap !important;
+    min-width:0 !important;
+  }
+}
