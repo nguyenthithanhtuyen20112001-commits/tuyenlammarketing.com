@@ -970,3 +970,73 @@ a.metric-card:hover {
     left:9px !important;
   }
 }
+
+/* Timeline mobile - căn giữa, gọn gàng */
+@media(max-width:640px) {
+  .horizontal-timeline {
+    flex-direction:column !important;
+    overflow-x:visible !important;
+    gap:16px !important;
+    align-items:center !important;
+  }
+  .horizontal-timeline > div {
+    min-width:unset !important;
+    flex:unset !important;
+    width:100% !important;
+    position:static !important;
+    background:var(--white);
+    border:1px solid var(--gray-100);
+    border-radius:12px;
+    padding:16px;
+  }
+  /* Ẩn dot và đường kẻ */
+  .horizontal-timeline > div > div:first-child,
+  .horizontal-timeline > div > div:nth-child(2) {
+    display:none !important;
+  }
+  /* Content: logo + text nằm ngang, không đè */
+  .horizontal-timeline > div > div:last-child {
+    display:flex !important;
+    flex-direction:row !important;
+    align-items:center !important;
+    gap:12px !important;
+  }
+  .horizontal-timeline > div > div:last-child img,
+  .horizontal-timeline > div > div:last-child > div:first-child {
+    flex-shrink:0 !important;
+    width:50px !important;
+    height:50px !important;
+  }
+  .horizontal-timeline > div > div:last-child h4 { font-size:0.85rem !important; }
+  .horizontal-timeline > div > div:last-child p { font-size:0.78rem !important; }
+}
+
+/* Timeline mobile - dọc, căn giữa, không đè nhau */
+@media(max-width:640px) {
+  .horizontal-timeline {
+    flex-direction:column !important;
+    overflow-x:visible !important;
+    overflow-y:visible !important;
+    gap:12px !important;
+    align-items:stretch !important;
+  }
+  .tl-item {
+    min-width:unset !important;
+    flex:unset !important;
+    position:static !important;
+    background:var(--white);
+    border:1px solid var(--gray-100);
+    border-radius:12px;
+    padding:16px !important;
+  }
+  .tl-line { display:none !important; }
+  .tl-dot { display:none !important; }
+  .tl-content {
+    display:flex !important;
+    flex-direction:row !important;
+    align-items:center !important;
+    gap:12px !important;
+  }
+  .tl-content h4 { font-size:0.85rem !important; }
+  .tl-content p { font-size:0.78rem !important; }
+}
