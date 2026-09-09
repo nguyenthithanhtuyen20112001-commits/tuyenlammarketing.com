@@ -935,3 +935,8 @@ a.metric-card:hover {
 @media(max-width:640px) {
   .hero-subtitle { font-size:0.78rem !important; }
 }
+
+/* Giảm gap grid hero container trên mobile */
+@media(max-width:640px) {
+  .hero-container { gap:8px !important; }
+}
