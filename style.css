@@ -838,3 +838,16 @@ a.metric-card:hover {
   .hero-buttons .btn-primary,
   .hero-buttons .btn-secondary { white-space:nowrap !important; }
 }
+
+/* Hero buttons - co lại vừa màn hình mobile */
+@media(max-width:640px) {
+  .hero-buttons { justify-content:center; width:100%; }
+  .hero-buttons .btn-primary,
+  .hero-buttons .btn-secondary {
+    font-size:0.75rem !important;
+    padding:11px 14px !important;
+    flex:1 1 0;
+    min-width:0;
+    text-align:center;
+  }
+}
