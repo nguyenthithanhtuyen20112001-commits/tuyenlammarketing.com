@@ -901,3 +901,8 @@ a.metric-card:hover {
   .profile-card p { margin-top:2px; }
   .hero-subtitle { margin-bottom:16px; }
 }
+
+/* Sửa lại vị trí tên trong profile card mobile */
+@media(max-width:640px) {
+  .profile-card h3 { margin-top:auto !important; }
+}
