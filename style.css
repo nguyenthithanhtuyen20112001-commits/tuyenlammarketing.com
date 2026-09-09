@@ -886,3 +886,8 @@ a.metric-card:hover {
     justify-content:center !important;
   }
 }
+
+/* Ẩn icon điện thoại trong profile card trên mobile */
+@media(max-width:640px) {
+  .profile-socials { display:none !important; }
+}
