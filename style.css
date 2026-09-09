@@ -925,3 +925,8 @@ a.metric-card:hover {
     font-size:1.1rem;
   }
 }
+
+/* Giảm khoảng trống giữa stats và profile card trên mobile */
+@media(max-width:640px) {
+  .hero-visual { margin-top:0 !important; }
+}
