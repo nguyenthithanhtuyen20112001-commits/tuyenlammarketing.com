@@ -832,3 +832,9 @@ a.metric-card:hover {
 @media(max-width:640px) {
   .hero-buttons .btn-icon { display:none !important; }
 }
+
+/* Hero buttons - không xuống dòng chữ trên mobile */
+@media(max-width:640px) {
+  .hero-buttons .btn-primary,
+  .hero-buttons .btn-secondary { white-space:nowrap !important; }
+}
