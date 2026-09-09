@@ -809,3 +809,10 @@ a.metric-card:hover {
 @media(max-width:640px) {
   .float-badge.badge-2 { bottom:38%; }
 }
+
+/* Hero section - giảm khoảng trống trên mobile */
+@media(max-width:640px) {
+  .hero { padding:80px 24px 24px; }
+  .hero-visual { margin-top:16px; }
+  .hero-stats { margin-top:20px; }
+}
