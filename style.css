@@ -827,3 +827,8 @@ a.metric-card:hover {
 @media(max-width:640px) {
   .hero-buttons .btn { font-size:0.72rem !important; padding:12px 8px !important; }
 }
+
+/* Ẩn icon trong hero buttons trên mobile */
+@media(max-width:640px) {
+  .hero-buttons .btn-icon { display:none !important; }
+}
