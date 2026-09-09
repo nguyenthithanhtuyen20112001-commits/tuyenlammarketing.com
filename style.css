@@ -940,3 +940,8 @@ a.metric-card:hover {
 @media(max-width:640px) {
   .hero-container { gap:8px !important; }
 }
+
+/* Personal card text - font 0.78rem trên mobile */
+@media(max-width:640px) {
+  .personal-card p { font-size:0.78rem !important; }
+}
