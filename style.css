@@ -804,3 +804,8 @@ a.metric-card:hover {
     object-fit: cover;
   }
 }
+
+/* Badge SEO Specialist - đẩy lên trên mobile */
+@media(max-width:640px) {
+  .float-badge.badge-2 { bottom:38%; }
+}
