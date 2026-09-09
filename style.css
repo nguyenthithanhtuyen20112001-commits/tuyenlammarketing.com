@@ -816,3 +816,9 @@ a.metric-card:hover {
   .hero-visual { margin-top:16px; }
   .hero-stats { margin-top:20px; }
 }
+
+/* Hero buttons - 1 hàng ngang trên mobile */
+@media(max-width:640px) {
+  .hero-buttons { flex-wrap:nowrap; gap:10px; }
+  .hero-buttons .btn { flex:1; text-align:center; padding:14px 10px; font-size:0.82rem; white-space:nowrap; }
+}
