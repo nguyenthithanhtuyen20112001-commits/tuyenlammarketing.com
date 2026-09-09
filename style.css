@@ -876,3 +876,13 @@ a.metric-card:hover {
   .hero-buttons .btn-primary { flex:1 1 auto !important; }
   .hero-buttons .btn-secondary { flex:0 0 auto !important; padding:12px 16px !important; }
 }
+
+/* Hero primary button - font bằng "Liên hệ ngay", chữ giữa */
+@media(max-width:640px) {
+  .hero-buttons .btn-primary {
+    font-size:0.9rem !important;
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+  }
+}
