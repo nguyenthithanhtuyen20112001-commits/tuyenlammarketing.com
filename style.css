@@ -950,3 +950,23 @@ a.metric-card:hover {
 @media(max-width:640px) {
   .personal-icon { display:none !important; }
 }
+
+/* Timeline kinh nghiệm - hiển thị dọc trên mobile */
+@media(max-width:640px) {
+  .horizontal-timeline {
+    flex-direction:column !important;
+    overflow-x:visible !important;
+    gap:24px !important;
+  }
+  .horizontal-timeline > div {
+    min-width:unset !important;
+    flex:unset !important;
+  }
+  /* Ẩn đường kẻ ngang, thay bằng đường dọc */
+  .horizontal-timeline > div > div:first-child {
+    width:2px !important;
+    height:calc(100% + 24px) !important;
+    top:20px !important;
+    left:9px !important;
+  }
+}
