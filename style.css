@@ -792,3 +792,15 @@ a.metric-card:hover {
   .project-accordion.open .project-accordion-body { padding:0 20px 20px; }
   .proj-header-left h4 { font-size:1rem; }
 }
+
+/* Social channels grid - vertical on mobile */
+@media(max-width:640px) {
+  .social-channels-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .social-channels-grid .metric-card img {
+    max-height: 240px;
+    width: 100%;
+    object-fit: cover;
+  }
+}
