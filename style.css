@@ -870,3 +870,9 @@ a.metric-card:hover {
     min-width:0 !important;
   }
 }
+
+/* Hero buttons - primary to ra, secondary vừa chữ */
+@media(max-width:640px) {
+  .hero-buttons .btn-primary { flex:1 1 auto !important; }
+  .hero-buttons .btn-secondary { flex:0 0 auto !important; padding:12px 16px !important; }
+}
