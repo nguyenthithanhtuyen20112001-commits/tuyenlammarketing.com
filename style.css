@@ -781,6 +781,7 @@ a.metric-card:hover {
     box-shadow:var(--shadow-md); gap:16px;
   }
   .hero-text h1 { font-size:2rem; }
+  .section-title { font-size:1.6rem; }
   .skills-grid { grid-template-columns:1fr; }
   .profile-card { width:300px; height:380px; }
   .edu-card { flex-direction:column; text-align:center; }
