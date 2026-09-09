@@ -147,3 +147,10 @@ function toggleProject(headerEl) {
     setTimeout(() => lucide.createIcons(), 100);
   }
 }
+
+// Skill Accordion Toggle (mobile only)
+function toggleSkill(headerEl) {
+  if (window.innerWidth > 768) return; // Desktop: không làm gì
+  const card = headerEl.closest('.skill-card');
+  card.classList.toggle('open');
+}

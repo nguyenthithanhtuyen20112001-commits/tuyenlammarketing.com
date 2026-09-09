@@ -469,6 +469,7 @@ body {
   text-align:center;
 }
 .skill-card:hover { box-shadow:var(--shadow-md); transform:translateY(-6px); border-color:var(--gold); }
+.skill-card-header { display:flex; flex-direction:column; align-items:center; gap:0; cursor:pointer; }
 .skill-icon {
   width:60px; height:60px; border-radius:16px;
   background:var(--gold-glow); margin:0 auto 16px;
@@ -478,6 +479,39 @@ body {
 .skill-card:hover .skill-icon { background:var(--gold); color:var(--white); }
 .skill-card h4 { font-family:var(--font-display); margin-bottom:8px; }
 .skill-card p { color:var(--gray-500); font-size:0.9rem; }
+.skill-body p { color:var(--gray-500); font-size:0.9rem; }
+.skill-chevron { display:none; }
+
+@media (max-width: 768px) {
+  .skill-card {
+    padding:20px; text-align:left;
+    transform:none !important;
+  }
+  .skill-card:hover { transform:none; }
+  .skill-card-header {
+    flex-direction:row; align-items:center;
+    gap:14px; justify-content:space-between;
+  }
+  .skill-card-header .skill-icon {
+    width:44px; height:44px; margin:0; flex-shrink:0; border-radius:12px;
+  }
+  .skill-card-header h4 { margin:0; text-align:left; flex:1; font-size:0.95rem; }
+  .skill-chevron {
+    display:flex; align-items:center; justify-content:center;
+    color:var(--gold); transition:transform 0.3s ease; flex-shrink:0;
+  }
+  .skill-card.open .skill-chevron { transform:rotate(180deg); }
+  .skill-body {
+    max-height:0; overflow:hidden;
+    transition:max-height 0.35s ease, padding 0.3s ease;
+    padding:0;
+  }
+  .skill-card.open .skill-body {
+    max-height:200px;
+    padding-top:12px;
+  }
+}
+
 
 /* ===== PROJECTS ACCORDION ===== */
 .projects-list { display:flex; flex-direction:column; gap:16px; }
