@@ -945,3 +945,8 @@ a.metric-card:hover {
 @media(max-width:640px) {
   .personal-card p { font-size:0.78rem !important; }
 }
+
+/* Ẩn icon trái tim trong personal card trên mobile */
+@media(max-width:640px) {
+  .personal-icon { display:none !important; }
+}
