@@ -822,3 +822,8 @@ a.metric-card:hover {
   .hero-buttons { flex-wrap:nowrap; gap:10px; }
   .hero-buttons .btn { flex:1; text-align:center; padding:14px 10px; font-size:0.82rem; white-space:nowrap; }
 }
+
+/* Hero buttons - chữ nhỏ hơn để vừa 1 dòng */
+@media(max-width:640px) {
+  .hero-buttons .btn { font-size:0.72rem !important; padding:12px 8px !important; }
+}
